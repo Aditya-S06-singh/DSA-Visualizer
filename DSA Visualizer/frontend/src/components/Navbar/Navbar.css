@@ -1,0 +1,107 @@
+/*
+==========================================================
+Navbar Styling
+==========================================================
+*/
+
+.navbar{
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    background:#1e293b;
+
+    color:white;
+
+}
+
+/*
+==========================================================
+Left Side
+==========================================================
+*/
+
+.navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/*
+Temporary logo
+
+Later this will become an SVG.
+*/
+
+.logo{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+.title{
+
+    font-size:25px;
+
+    font-weight:600;
+
+}
+
+/*
+==========================================================
+Run Button
+==========================================================
+*/
+
+.run-button{
+
+    padding:10px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.run-button:hover{
+
+    background:#16a34a;
+
+}

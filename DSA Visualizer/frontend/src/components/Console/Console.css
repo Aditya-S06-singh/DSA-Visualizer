@@ -1,0 +1,43 @@
+/*
+==========================================================
+Console Styling
+==========================================================
+
+The console is designed to resemble a terminal window.
+
+Later every execution step will be displayed here.
+
+==========================================================
+*/
+
+.console-box{
+
+    height:100%;
+
+    background:#0f172a;
+
+    color:#22c55e;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    overflow-y:auto;
+
+    font-family:Consolas, monospace;
+
+}
+
+/*
+Each log message appears on a separate line.
+*/
+
+.console-line{
+
+    margin-bottom:8px;
+
+    white-space:pre-wrap;
+
+    line-height:1.5;
+
+}

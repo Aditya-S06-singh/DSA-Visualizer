@@ -1,18 +1,28 @@
-# React + Vite
+# DSA Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is now organized into a frontend and backend structure for the DSA Visualizer application.
 
-Currently, two official plugins are available:
+## Project structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- frontend/: React + Vite application
+  - src/components/: UI panels such as Navbar, Editor, Console, Variables, Controls, and Sidebar
+  - src/animations/: visualization engines and animation components
+  - src/context/, src/hooks/, src/services/, src/utils/, src/styles/: supporting app modules
+- backend/: Spring Boot service scaffold for parser and animation APIs
 
-## React Compiler
+## Run locally
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Frontend
 
-Note: This will impact Vite dev & build performances.
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+### Backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd backend
+./mvnw spring-boot:run
+```

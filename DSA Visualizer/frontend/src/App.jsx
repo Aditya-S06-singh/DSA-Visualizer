@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar";
-import Editor from "./components/Editor";
-import AnimationArea from "./components/AnimationArea";
-import Variables from "./components/Variables";
-import Console from "./components/Console";
-import Controls from "./components/Controls";
+import Navbar from "./components/Navbar/Navbar";
+import Editor from "./components/Editor/Editor";
+import AnimationArea from "./animations/AnimationArea";
+import Variables from "./components/Variables/Variables";
+import Console from "./components/Console/Console";
+import Controls from "./components/Controls/Controls";
 
 function App() {
   return (
