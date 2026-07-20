@@ -3,22 +3,24 @@
 | main.jsx
 |--------------------------------------------------------------------------
 |
-| This is the entry point of our React application.
+| This is the entry point of the React application.
 |
-| Think of this file as the "starting point" of the website.
-| It loads the App component and attaches it to the HTML page.
+| React starts execution from this file.
 |
-| The <div id="root"></div> inside index.html is where our
-| entire React application will be displayed.
+| Responsibilities:
+| 1. Import global CSS
+| 2. Create the React root
+| 3. Render the App component
 |
 */
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./App.css";
 
-// Create the root of our React application and render App.jsx
+import App from "./App.jsx";
+import "./styles/global.css";
+
+// Create the root element and render the application.
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
